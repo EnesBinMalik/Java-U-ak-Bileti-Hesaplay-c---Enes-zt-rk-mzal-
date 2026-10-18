@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+  code, pre, .font-mono {
+    font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  }
+}
+
+/* Subtle airline dashed tear line styling */
+.ticket-notch {
+  position: relative;
+}
+.ticket-notch::before, .ticket-notch::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #020617; /* match bg-slate-950 */
+  border-radius: 50%;
+  z-index: 10;
+}
+.ticket-notch::before {
+  top: -10px;
+  left: calc(72% - 10px);
+}
+.ticket-notch::after {
+  bottom: -10px;
+  left: calc(72% - 10px);
+}
+@media (max-width: 768px) {
+  .ticket-notch::before {
+    left: -10px;
+    top: calc(70% - 10px);
+  }
+  .ticket-notch::after {
+    right: -10px;
+    left: auto;
+    top: calc(70% - 10px);
+  }
+}

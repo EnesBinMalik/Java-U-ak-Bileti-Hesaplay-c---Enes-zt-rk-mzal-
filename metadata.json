@@ -1,0 +1,6 @@
+{
+  "name": "Java Uçak Bileti Hesaplayıcı - Enes Öztürk İmzalı",
+  "description": "Java ile mesafeye, yaşa ve yolculuk tipine göre uçak bileti fiyatı ve indirim hesaplayan interaktif simülatör ve kaynak kod aracı. Enes Öztürk imzalı.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
